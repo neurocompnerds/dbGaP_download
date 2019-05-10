@@ -1,6 +1,6 @@
 # Downloading data from dbGaP (IN PROGRESS)
 
-Here are some simple scripts for downloading SRA files from dbGaP on Phoenix HPC.
+Here are some simple scripts for downloading SRA files from dbGaP. Adapted from [Hurwitz Lab](https://github.com/hurwitzlab/download-dbgap) for Phoenix HPC.
 
 ## How to get data from dbGaP
 
