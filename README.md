@@ -1,1 +1,1 @@
-# dbGaP_download
+# Downloading data from dbGaP
