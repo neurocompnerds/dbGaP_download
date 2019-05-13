@@ -12,6 +12,8 @@
 #SBATCH --mail-type=FAIL                                                                                                                                                                                                                                                       
 #SBATCH --mail-user=urwah.nawaz@adelaide.edu.au                                                                                                                                                                                                                       
 
+module load SRA-Toolkit/2.8.2-1-centos_linux64
+
 export WD="/fast/users/a1654797/gtex_data"
 
 touch $WD/out/decrypt
