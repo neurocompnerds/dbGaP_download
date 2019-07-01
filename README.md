@@ -4,7 +4,9 @@ The scripts for downloading SRA files from dbGaP are in this repository. Some sc
 
 Some archives on dbGaP have elected to store and distribute their data from cloud providers in their originally submitted format. These files are not available via the SRA toolkit and require an Amazon or Google cloud serves to access these reads. 
 
-Once access to files has been granted, please select the `run selector` option from the Actions tab. 
+Once access to files has been granted, please select the `run selector` option from the Actions tab. You can check the format of the files as well as the Datastore provider using the `DATASTORE filetype` and `DATASTORE region` columns. 
+
+If the `DATASTORE region` is ncbi, then these files can be downloaded using the SRA tool-kit 
 
 ## How to get data from dbGaP using SRA-toolkit 
 
