@@ -8,9 +8,10 @@ Once access to files has been granted, please select the `run selector` option f
 
 If the `DATASTORE region` is ncbi, then these files can be downloaded using the SRA tool-kit 
 
-## How to get data from dbGaP using SRA-toolkit 
+## Retrive files from dbGaP using SRA-toolkit 
 
-After the access request has been granted, you will need to download the data from dbGaP. If you are not the PI, you will need the PI to get you downloader access to the data. For more instructions, visit this [ncbi](https://www.ncbi.nlm.nih.gov/books/NBK36439/) document. 
+For more instructions, visit this [ncbi](https://www.ncbi.nlm.nih.gov/books/NBK36439/) document. 
+Scripts in this repository are formatted for Phoenix HPC.
 
 1) Download the repository key and move it to $FASTDIR on phoenix. After following the instructiions from the ncbi guide, download the cart file with your selected files and move to $FASTDIR. 
 
