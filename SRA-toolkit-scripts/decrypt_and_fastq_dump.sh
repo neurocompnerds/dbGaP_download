@@ -4,8 +4,8 @@
 #SBATCH -p batch                                                                                                                                                                                                                                                               
 #SBATCH -n 20                                                                                                                                                                                                                                                                  
 #SBATCH -N 2                                                                                                                                                                                                                                                                   
-#SBATCH --time=03-00:00                                                                                                                                                                                                                                                        
-#SBATCH --mem=50GB                                                                                                                                                                                                                                                             
+#SBATCH --time=3-00:00                                                                                                                                                                                                                                                        
+#SBATCH --mem=8GB                                                                                                                                                                                                                                                             
 
 # notification configuration                                                                                                                                                                                                                                                   
 #SBATCH --mail-type=END                                                                                                                                                                                                                                                        
@@ -39,4 +39,4 @@ done
 
 #get the fastq for all the sra files                                                                                                                                                                                                                                          
 
-fastq-dump --gzip --split-files --unaligned ./*.sra &>>$WD/out/fastq_dump.log
+fastq-dump --gzip --split-files ./*.sra &>>$WD/out/fastq_dump.log
