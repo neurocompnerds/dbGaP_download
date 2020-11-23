@@ -1,0 +1,11 @@
+/tmp/slurmd/job552188/slurm_script: line 41: /out/dbgap_download.log: No such file or directory
+Downloading kart file 'cart_prj21432_202011161812.krt'
+Checking sizes of kart files...
+
+
+Downloading the files...
+
+2020-11-17T22:48:17 prefetch.2.9.0: 1) Downloading 'Genotypes in VCF format'...
+2020-11-17T22:48:17 prefetch.2.9.0 int: path not found while creating directory within file system module - /fast/users/a1654797/dbGaP-21432/files/phg001219.v1.GTEx_v8_WGS.genotype-calls-vcf.c1.GRU.tar.ncbi_enc.lock: Cannot OpenFileWrite
+2020-11-17T22:48:17 prefetch.2.9.0 int: path not found while listing directory within file system module - /fast/users/a1654797/dbGaP-21432/files: KDirectoryList
+2020-11-17T22:48:17 prefetch.2.9.0: 1) failed to download Genotypes in VCF format

@@ -3,7 +3,7 @@
 #SBATCH -A robinson                                                                                                                                                                                                                                                            
 #SBATCH -p batch                                                                                                                                                                                                                                                               
 #SBATCH -n 20                                                                                                                                                                                                                                                                  
-#SBATCH -N 2                                                                                                                                                                                                                                                                   
+#SBATCH -N 1                                                                                                                                                                                                                                                                  
 #SBATCH --time=3-00:00                                                                                                                                                                                                                                                        
 #SBATCH --mem=8GB                                                                                                                                                                                                                                                             
 
@@ -12,13 +12,11 @@
 #SBATCH --mail-type=FAIL                                                                                                                                                                                                                                                       
 #SBATCH --mail-user=urwah.nawaz@adelaide.edu.au                                                                                                                                                                                                                       
 
-module load SRA-Toolkit/2.8.2-1-centos_linux64
+module load SRA-Toolkit/2.9.0
 
-export WD="/fast/users/a1654797/gtex_data"
+export WD="/hpcfs/users/${USER}/dbGaP_download"
 
-touch $WD/out/decrypt
-touch $WD/out/fastq_dump
-export DIR="/fast/users/a1654797/dbGaP/sra"
+export DIR="/hpcfs/users/${USER}/dbGaP_download/files"
 
 if [ ! -d "$DIR" ]; then
     echo "Wrong directory!"
@@ -27,16 +25,7 @@ fi
 
 cd $DIR
 
-echo $(date) >> $WD/out/decrypt.log
 
-#check that all files are decrypted                                                                                                                                                                                                                                            
-arr=(./*)
+#check that all files are decrypted                                                                                                                                                                                                                                           
+vdb-decrypt *
 
-for f in "${arr[@]}"; do
-    echo "$f"
-    vdb-decrypt ./$f &>>$WD/out/decrypt.log
-done
-
-#get the fastq for all the sra files                                                                                                                                                                                                                                          
-
-fastq-dump --gzip --split-files ./*.sra &>>$WD/out/fastq_dump.log

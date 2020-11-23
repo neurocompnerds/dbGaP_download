@@ -1,0 +1,5 @@
+2020-11-20T02:55:59 vdb-decrypt.2.9.0: Decrypting file in place phg001219.v1.GTEx_v8_WGS.genotype-calls-vcf.c1.GRU.tar.ncbi_enc
+2020-11-20T02:56:01 vdb-decrypt.2.9.0: copying phg001219.v1.GTEx_v8_WGS.genotype-calls-vcf.c1.GRU.tar.ncbi_enc to .phg001219.v1.GTEx_v8_WGS.genotype-calls-vcf.c1.GRU.tar.ncbi_enc.vdb-decrypt-tmp
+2020-11-20T03:46:47 vdb-decrypt.2.9.0 err: unknown while writing file within file system module - unknown system error errno='Disk quota exceeded(122)'
+2020-11-20T03:46:47 vdb-decrypt.2.9.0 err: unknown while writing file within file system module - Failed to write to file .phg001219.v1.GTEx_v8_WGS.genotype-calls-vcf.c1.GRU.tar.ncbi_enc.vdb-decrypt-tmp at 474510000128
+2020-11-20T03:46:47 vdb-decrypt.2.9.0: exiting: RC(rcFS,rcFile,rcWriting,rcNoObj,rcUnknown) (841351170)
